@@ -21,7 +21,7 @@ After a waiting period of 30 seconds, the script will then use the ARP protocol 
 
 Finally, the hidden file .HostAlive.txt is deleted.
 
-#
+
 ## Example
 
 Here is an example usage of the script:
@@ -29,7 +29,6 @@ Here is an example usage of the script:
 ```
 ./scan.sh 192.168.0.1
 ```
-#
 ## Notes
 
 - This script requires root privileges to run, as it uses the `ping` and `arp` commands that require superuser permissions.
