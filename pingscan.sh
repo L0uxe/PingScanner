@@ -9,7 +9,7 @@ else
          ping -c1 $Network.$i | grep "ttl" | cut -d " " -f4  | tr -d ":" >> .HostAlive.txt &
     done
     sleep 60
-    Line=$(cat .HostAlive.txt)
+    Line=$(cat .HostAlive.txt | sort -u)
     for i in $Line; do
         arp $i
     done
